@@ -32,4 +32,20 @@ public class CalculatorTest
         //Then
         Assert.Equal(expectedresult, result);
     }
+    [Fact]
+    public void TestMultiply()
+    {
+        
+        //Given
+        Calculator calc = new Calculator();
+        int a = 5;
+        int b = 2;
+        int expectedresult = 10;
+
+        //When
+        int result = calc.multiply(a, b);
+
+        //Then
+        Assert.Equal(expectedresult, result);
+    }
 }
