@@ -17,4 +17,19 @@ public class CalculatorTest
         // Then
         Assert.Equal(expectedResult, result);
     }
+    [Fact]
+    public void TestSubtraction()
+    {
+        //Given
+        Calculator calc = new Calculator();
+        int a = 5;
+        int b = 2;
+        int expectedresult = 3;
+
+        //When
+        int result = calc.subtract(a, b);
+
+        //Then
+        Assert.Equal(expectedresult, result);
+    }
 }
