@@ -48,4 +48,20 @@ public class CalculatorTest
         //Then
         Assert.Equal(expectedresult, result);
     }
+       [Fact]
+    public void TestDivision()
+    {
+        
+        //Given
+        Calculator calc = new Calculator();
+        double a = 5;
+        double b = 2;
+        double expectedresult = 2.5;
+
+        //When
+        double result = calc.division(a, b);
+
+        //Then
+        Assert.Equal(expectedresult, result);
+    }
 }
